@@ -2,6 +2,18 @@
   nav {
     font-size: 10px !important;
   }
+  nav .cimaNav .esconder {
+    display: none;
+  }
+  #esconder {
+    display: none;
+  }
+  nav .baixoNav ul li {
+    display: none;
+  }
+  #spanToggle {
+    display: block !important;
+  }
   footer {
     font-size: 10px !important;
   }
@@ -12,15 +24,13 @@
     display: none !important;
   }
   #sobre {
-    width: 70% !important;
-    position: relative !important;
-    right: 10% !important;
+    width: 45% !important;
     text-align: start !important;
+    margin-left: 40px;
   }
   #sobre p {
-    font-size: 80% !important;
-    width: 170% !important;
-    margin: 0 !important;
+    font-size: 80%;
+    width: 170%;
   }
   .container-inicial {
     justify-content: flex-start !important;
@@ -37,7 +47,8 @@
   #container-quote blockquote {
     width: auto !important;
     text-align: center !important;
-    font-size: 20px !important;
+    padding: 15px;
+    font-size: 15px !important;
   }
   .acessos-container {
     flex-wrap: wrap !important;
@@ -133,6 +144,47 @@ nav .cimaNav ul li button {
   border-radius: 25px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+}
+nav #spanToggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(5, 43, 114);
+}
+nav .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+nav .overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+nav .overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+nav .overlay a:hover, nav .overlay a:focus {
+  color: #f1f1f1;
+}
+nav .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 nav #deixandoFlex {
   display: flex;
@@ -560,4 +612,16 @@ footer .copy {
   width: 550px;
   height: 320px;
   margin-bottom: -150px;
+}
+
+.artigo {
+  position: relative;
+  top: 120px;
+  display: flex;
+  justify-content: center;
+  height: 240px;
+  margin-bottom: 120px;
+}
+.artigo img {
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */

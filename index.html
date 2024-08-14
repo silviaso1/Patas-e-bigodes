@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <script src="dist/js/index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 
     <!---fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Página inicial</title>
+    <title>Página inicial</title> 
 </head>
 <body>
     <nav>
@@ -28,14 +28,34 @@
             </div>
             <div>
                 <ul>
-                    <li>Artigos</li>
-                    <li>Produtos</li>
-                    <li><button id="mudar mudar2">
+                    <li class="esconder">Artigos</li>
+                    <li class="esconder">Produtos</li>
+                    <li class="esconder"><button id="mudar">
                         <a href="login.html">Log in</a>
                     </button></li>
-                    <li><button>
+                    <li class="esconder"><button>
                         <a href="">Sign in</a>
                     </button></li>
+                    <li><div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <a href="login.html">Login</a>
+                          <a href="#">Sign in</a>
+                          <a href="#">Artigos</a>
+                          <a href="#">Produtos</a>
+                          <a href="#">Animais para adoção</a>
+                          <a href="#">Consulta Veterinária</a>
+                          <a href="#">Banho e tosa</a>
+                          <a href="#">Vacinação</a>
+                          <a href="#">Orçamentos</a>
+                          <a href="#">Agendamentos</a>
+                          <a href="#">Meu Plano</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                        <span id="spanToggle" onclick="openNav()">&#9776;</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -64,7 +84,6 @@
                         <a href="#">Artigo 2</a>
                         <a href="#">Artigo 3</a>
                     </div>
-
                 </li>
                 <li>
                     Vacinação
@@ -101,6 +120,7 @@
             </ul>
         </div>
     </nav>
+    
     <div class="top" id="gatoTopo">
         <img src="./img/inicial/fundo1.jpg" alt="gato"  >
     </div>

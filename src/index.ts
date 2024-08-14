@@ -1,6 +1,6 @@
 function menuNav(){
     document.addEventListener('DOMContentLoaded', () => {
-        const lis = document.querySelectorAll('.baixoNav li');
+        const lis = document.querySelectorAll('.baixoNav li'); 
     
         lis.forEach(li => {
             const abrirMenu = li.querySelector('.abrirMenu') as HTMLElement;

@@ -4,92 +4,84 @@
     font-size: 10px !important;
   }
 
+  nav .cimaNav .esconder{
+    display: none;
+  }
+  #esconder{
+    display: none;
+  }
+  nav .baixoNav ul li {
+    display: none;
+  }
+  #spanToggle{
+    display: block !important;
+  }
   footer {
     font-size: 10px !important;
   }
-
-  .newsletter-section {
-    h3, form {
-      text-align: center !important;
-    }
+  .newsletter-section h3, .newsletter-section form {
+    text-align: center !important;
   }
-
   #container-foto {
     display: none !important;
   }
-
   #sobre {
-    width: 70% !important;
-    position: relative !important;
-    right: 10% !important;
+    width: 45% !important;
     text-align: start !important;
-
-    p {
-      font-size: 80% !important;
-      width: 170% !important;
-      margin: 0 !important;
-    }
+    margin-left: 40px;
   }
-
+  #sobre p {
+    font-size: 80%;
+    width: 170%;
+  }
   .container-inicial {
     justify-content: flex-start !important;
     width: 100% !important;
     position: relative !important;
     bottom: 60px !important;
   }
-
   #gatoTopo {
     height: 210px !important;
   }
-
   #container-quote {
     padding: 20px !important;
-
-    blockquote {
-      width: auto !important;
-      text-align: center !important;
-      font-size: 20px !important;
-    }
   }
-
+  #container-quote blockquote {
+    width: auto !important;
+    text-align: center !important;
+    padding: 15px;
+    font-size: 15px !important;
+  }
   .acessos-container {
     flex-wrap: wrap !important;
-
-    table {
-      width: 100% !important;
-      margin-left: 0 !important;
-
-      img {
-        height: 80px !important;
-        width: 80% !important;
-      }
-    }
   }
-
+  .acessos-container table {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .acessos-container table img {
+    height: 80px !important;
+    width: 80% !important;
+  }
   .Principal {
     flex-direction: column !important;
     padding: 0 !important;
     flex: 1 !important;
   }
-
   .divFora {
     width: 100% !important;
   }
-
   #aa {
     width: 100% !important;
   }
-
   .parteLado {
     display: none !important;
   }
-
   .parteLogin {
     padding: 25px !important;
     width: 80% !important;
     margin-top: 0 !important;
   }
-
   #lado {
     width: 200% !important;
   }

@@ -21,6 +21,7 @@ function menuNav() {
     });
 }
 menuNav();
+
 function mostrarSenha() {
     const senha = document.getElementById('senha');
     const mostrar = document.getElementById('mostrarSenha');
@@ -36,3 +37,13 @@ function mostrarSenha() {
 function esquecerSenha() {
     window.alert("Enviaremos um código para seu email!");
 }
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+ }
+
+
